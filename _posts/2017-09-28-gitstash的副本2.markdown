@@ -1,0 +1,27 @@
+---
+layout: post
+title:  git stash
+date:   2018-09-28
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. 
+img: post-1.jpg # Add image post (optional)
+tags: [Blog, git]
+author: wangzm # Add name author (optional)
+---
+当在一个分支上工作一段时间之后，需要临时切换到其它分支上，但是当前的工作还没完成一个功能点，为了避免增加没有意义的提交信息，可以先把当前工作区域的内容储藏起来，切换到其它分支，完成之后再切换回当前分支。
+* git stash / git stash save 内容储藏起来。项目回到上次提交完成时候的干净状态。
+* git stash  --keep-index 告诉 git 不要存储通过 git add 命令暂存的东西
+(不太明白，用起来感觉跟 git stash 一样)
+* git stash --include-untracked / git stash -u , 告诉 git 暂存创建的未跟踪的文件
+* git stash --patch 交互式提示文件的修改
+* git stash branch testChanges 把储藏空间的内容座位一份新的分支处理，处理完成之后可以把储藏空间的内容清除掉
+* git stash list 查看储存空间的列表
+* git stash pop 把储存空间最新的一次存储取出来
+* git stash apply stash@{0} 取出指定的储存信息
+* git stash drop stash@{0} 把指定的储存从栈里清除
+* git clean 从工作目录中移除未被追踪的文件,慎重使用，具体使用具体查看文档。
+  * git clean -d -f 强制移除
+  * git clean -d -n 做一次演示，告诉你要移除什么
+  * 任何与 .gitignore 或其它忽略文件相匹配的文件都不会被移除。如果这些文件也想要移除， git clean -d -n -x
+
+
+

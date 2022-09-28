@@ -1,0 +1,50 @@
+---
+layout: post
+title:  vue sync修饰符的理解
+date:   2018-06-07
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. 
+img: vue.jpg # Add image post (optional)
+tags: [wx]
+author: wangzm # Add name author (optional)
+---
+
+## vue sync修饰符的理解
+.sync 修饰符是vue编译时的一个语法糖，会被扩展为自动更新父组件属性的v-on监听器。  
+即： 当字组件改变一个props 值得时候，这个变化会同步到父组件。
+
+```javascript
+//parent
+  <div>
+    <button @click="changeShow">切换</button>
+    <child :show.sync="showChild"/>
+  </div>
+import Child from './model'
+export default {
+  name: 'sync',
+  components: {Child},
+  data () {
+    return {
+      showChild: true
+    }
+  },
+  methods: {
+    changeShow () {
+      this.showChild = !this.showChild
+    }
+  }
+}
+// child
+  <div v-if="show">
+     子模块
+    <button @click.stop="close">关闭</button>
+  </div>
+export default {
+  name: 'child',
+  props: ['show'],
+  methods: {
+    close () {
+      this.$emit('update:show', false)
+    }
+  }
+}
+```

@@ -1,0 +1,24 @@
+---
+layout: post
+title:  vsCode 代码合并提示需要填写合并代码原因如何操作
+date:   2018-09-10
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+img:  post-1.jpg # Add image post (optional)
+tags: [Blog, git]
+author: wangzm # Add name author (optional)
+---
+# 解决 git 合并代码或者提交时候的这个报错
+  在 git pull, 或者 git merge 的时候会遇到这样的一个提示信息， ‘Please enter a commit message to explain why this merge is necessary’
+
+  ![avatar](../assets/img/giterror.jpg)
+有两种解决办法：
+# 忽略这个提示
+  - esc
+  - :wq
+# 填写为什么要合并的原因
+  - i, 进入 insert 模式
+  - 填写信息
+  - esc
+  - :wq 退出
+
+
