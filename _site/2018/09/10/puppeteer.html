@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>puppeteer 完成极验验证 | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="puppeteer 完成极验验证" />
+<meta name="author" content="wangzm" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes." />
+<meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes." />
+<link rel="canonical" href="http://localhost:4000/2018/09/10/puppeteer.html" />
+<meta property="og:url" content="http://localhost:4000/2018/09/10/puppeteer.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-10T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="puppeteer 完成极验验证" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"wangzm"},"dateModified":"2018-09-10T00:00:00+08:00","datePublished":"2018-09-10T00:00:00+08:00","description":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.","headline":"puppeteer 完成极验验证","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/09/10/puppeteer.html"},"url":"http://localhost:4000/2018/09/10/puppeteer.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">puppeteer 完成极验验证</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-09-10T00:00:00+08:00" itemprop="datePublished">Sep 10, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">wangzm</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><a href="https://github.com/wangzm123/resource/blob/master/index.js">源码点击这里</a>
+<!-- TOC --></p>
+
+<ul>
+  <li><a href="#安装puppeteer">安装puppeteer</a></li>
+  <li><a href="#项目中使用的基本api">项目中使用的基本API</a>
+    <ul>
+      <li><a href="#puppeteerlaunch">puppeteer.launch</a></li>
+      <li><a href="#page">page</a></li>
+      <li><a href="#mouse">mouse</a></li>
+    </ul>
+  </li>
+  <li><a href="#核心代码的实现与原理">核心代码的实现与原理</a></li>
+</ul>
+
+<!-- /TOC -->
+
+<h1 id="安装puppeteer">安装puppeteer</h1>
+<ul>
+  <li>执行cnpm install puppeteer</li>
+  <li>puppeteer 所有的操作基本都是异步的，所以需要使用 async, await</li>
+</ul>
+
+<h1 id="项目中使用的基本api">项目中使用的基本API</h1>
+<h2 id="puppeteerlaunch">puppeteer.launch</h2>
+<ul>
+  <li>puppeteer.launch 启动 Chromium 实例</li>
+  <li>puppeteer.launch(options)
+    <ul>
+      <li>headless  无头模式</li>
+      <li>slowMo 调整 puppeteer 的操作速度，以便在调试阶段可以看清楚发生了什么</li>
+      <li>devtools 打开控制台</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="page">page</h2>
+<ul>
+  <li>browser.newPage() 创建 page 实例</li>
+  <li>page.setViewPort() 设置页面的大小，一个 browser 实例可以有多个 page 实例， page 实例可是设置各自的大小</li>
+  <li>page.setJavaScriptEnavled() 设置页面是否禁用JS</li>
+  <li>page.goto() 页面导航</li>
+  <li>page.type(selector, value[,options]) selector 要输入元素的选择器，value 要输入的值，options.delay 输入没个字符的间隔，默认为0.每个字符的输入都会触发keydown, keypress/input,keyup 事件</li>
+  <li>page.waitFor() 根据入参不同，效果也不同。
+    <ul>
+      <li>入参为 string, 认为是 css 选择器或者 xpath, 根据是否包含‘//’进行判断， 为page.waitForSelector 或者 page.waiteForXPath 的缩写</li>
+      <li>入参为 function, 是 page.waitForFunction 的缩写</li>
+      <li>入参为 number，是认为是超时时间，在指定时间后返回 resolve</li>
+    </ul>
+  </li>
+  <li>page.$eval(selector, function[,…args])
+    <ul>
+      <li>selector 为选择器</li>
+      <li>funciton 为在浏览器实例上下执行的方法</li>
+      <li>…args 为给 fucntion 传的参数</li>
+    </ul>
+  </li>
+  <li>page.evalute(function[,…args])
+    <ul>
+      <li>function 在页面实例上下文中执行的方法</li>
+      <li>…args 传给function 的参数</li>
+      <li>返回 function 的执行结果</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="mouse">mouse</h2>
+<ul>
+  <li>通过 page.mouse 创建 mouse 实例， 该实例是在相对于窗口左上角， 基于 css 像素运行的。即具体操作的时候，要制定当前操作的位置</li>
+  <li>mouse.click(X, Y[,options])
+    <ul>
+      <li>X, Y 为要点击的位置，</li>
+      <li>options</li>
+    </ul>
+  </li>
+  <li>mouse.down([options])</li>
+  <li>mouse.move(X, Y[,options])
+    <ul>
+      <li>X,Y 为要移动到的位置</li>
+      <li>options.steps 控制移动的速度</li>
+    </ul>
+  </li>
+  <li>mouse.up([options])</li>
+</ul>
+
+<h1 id="核心代码的实现与原理">核心代码的实现与原理</h1>
+<ul>
+  <li>极验图片验证的原理是 canvas 两个图层，完整的背景图片（img1），一个是带缺口的图片(img2)。我们需要拿到 img2 的缺口位置，操作鼠标拖动至这个位置即可。
+    <ul>
+      <li>计算图片位置： 获取 img1, img2 的每个相同像素点的颜色，比较颜色差异，差异较大的视为可能存在的位置
+        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">evalute</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="kd">const</span> <span class="nx">img1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_canvas_fullbg</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">img2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_canvas_bg</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">piexDifrence</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="kd">let</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">260</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span><span class="mi">160</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">ctx1</span> <span class="o">=</span> <span class="nx">img1</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">).</span><span class="nx">getImageData</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="kd">const</span> <span class="nx">ctx2</span> <span class="o">=</span> <span class="nx">img2</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">).</span><span class="nx">getImageData</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="kd">const</span> <span class="nx">data1</span> <span class="o">=</span> <span class="nx">ctx1</span><span class="p">.</span><span class="nx">data</span>
+    <span class="kd">const</span> <span class="nx">data2</span> <span class="o">=</span> <span class="nx">ctx2</span><span class="p">.</span><span class="nx">data</span>
+    <span class="kd">const</span> <span class="nx">res1</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">data1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="nx">data2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="kd">const</span> <span class="nx">res2</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">data1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="nx">data2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="kd">const</span> <span class="nx">res3</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">data1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="nx">data2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">res1</span> <span class="o">&gt;</span> <span class="nx">piexDifrence</span> <span class="o">&amp;&amp;</span> <span class="nx">res2</span> <span class="o">&gt;</span> <span class="nx">piexDifrence</span> <span class="o">&amp;&amp;</span> <span class="nx">res3</span> <span class="o">&gt;</span> <span class="nx">piexDifrence</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="cm">/** 此最大值最小值需调试*/</span>
+<span class="k">return</span> <span class="p">{</span><span class="na">min</span><span class="p">:</span> <span class="nx">res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="na">max</span><span class="p">:</span> <span class="nx">res</span><span class="p">[</span><span class="nx">res</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span><span class="mi">50</span><span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div>        </div>
+      </li>
+      <li>模拟用户操作，拖动图片
+        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">target</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_slider_button</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">start</span> <span class="o">=</span> <span class="nx">target</span><span class="p">.</span><span class="nx">boundingBox</span><span class="p">()</span>
+<span class="cm">/** 得到的原始点为按钮的左上角，要调整到按钮的中间，确保点击有效*/</span>
+<span class="kd">const</span> <span class="nx">startX</span> <span class="o">=</span> <span class="nx">start</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="kd">const</span> <span class="nx">startY</span> <span class="o">=</span> <span class="nx">start</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="cm">/** 获取移动距离的数组*/</span>
+<span class="kd">const</span> <span class="nx">distance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">calculateDistance</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">targetX</span> <span class="o">=</span> <span class="nx">startX</span> <span class="o">+</span> <span class="nx">distance</span><span class="p">.</span><span class="nx">min</span>
+<span class="kd">const</span> <span class="nx">targetY</span> <span class="o">=</span> <span class="nx">startY</span>
+<span class="cm">/** 此处操作要尽可能的模拟用户操作，不可直接把图片拉到指定位置，否则会失败*/</span>
+<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">startX</span><span class="p">,</span> <span class="nx">startY</span><span class="p">,</span> <span class="p">{</span><span class="na">delay</span><span class="p">:</span> <span class="mi">2000</span><span class="p">})</span>
+<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">down</span><span class="p">()</span>
+<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="nx">targetX</span> <span class="o">+</span> <span class="mi">30</span><span class="p">,</span> <span class="nx">targetY</span><span class="p">,</span> <span class="p">{</span><span class="na">steps</span><span class="p">:</span> <span class="mi">20</span><span class="p">})</span>
+<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">waitFor</span><span class="p">(</span><span class="mi">800</span><span class="p">)</span>
+<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="nx">targetX</span><span class="p">,</span> <span class="nx">targetY</span><span class="p">,</span> <span class="p">{</span><span class="na">steps</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>
+</code></pre></div>        </div>
+      </li>
+      <li>判断拉动图片的结果，处理返回的错误信息
+        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">evalute</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="kd">const</span> <span class="nx">isSuccess</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_success_animate</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">isFinish</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_radar_tip_content</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHtml</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">尝试过多</span><span class="dl">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span>
+<span class="cm">/**此处可定义多种错误*/</span>
+<span class="p">})</span>
+<span class="k">return</span> <span class="nx">result</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div><a class="u-url" href="/2018/09/10/puppeteer.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Your awesome title</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
