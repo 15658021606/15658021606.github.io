@@ -14,6 +14,6 @@ author: wangzm
   - git checkout XXX,撤销已 add 未 commit 的文件
 - git commit
   - git commit 未 push, 可用 git commit --amend 修改提交信息
-  - git reset HEAD^ 或 git reset HEAD~1
 - git push
+  - git reset HEAD^
   - git revert XXXXXX[git commit id]
