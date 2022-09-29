@@ -1,0 +1,21 @@
+---
+layout: post
+title: GIT RESET 操作
+date: 2019-10-17
+description: .....
+img: post-6.jpg # Add image post (optional)
+tags: [Blog, git]
+author: wangzm
+---
+
+# git 撤销
+
+- git Add
+  git restore --staged <文件>..." 以取消暂存
+- git commit
+  - git commit 未 push, 可用 git commit --amend 修改提交信息
+  - git reset HEAD^ 或 git reset HEAD~1
+- git push
+  - git revert XXXXXX[git commit id] 生成一个与要撤销的 commit 相反的一个 commit，提交上去即可，安全。
+  - git reset [版本号] --hard 会抛弃当前工作区域的修改， --soft 会回退到之前的版本，保留当前工作区域的修改。
+    再 git push origin [分支名] --force 覆盖掉远端的版本信息，使远端的仓库也回退相应版本
