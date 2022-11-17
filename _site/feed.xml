@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-17T16:52:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-17T17:18:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
 
 <table>
   <thead>
@@ -244,7 +244,7 @@
 
 <p>　　　　　举例1: 在 /etc 中搜索符合条件的文件，但最多搜索到 2级 子目录。　　find /etc -maxdepth 3 -name ‘*.conf’</p>
 
-<p>　　　　　举例2: find /etc -type f -name ‘*.conf’ -size +10k -maxdepthc 2</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="terminal" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-09-28T16:16:38+08:00</published><updated>2022-09-28T16:16:38+08:00</updated><id>http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>　　　　　举例2: find /etc -type f -name ‘*.conf’ -size +10k -maxdepthc 2</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="terminal" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">项目代码风格统一</title><link href="http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" rel="alternate" type="text/html" title="项目代码风格统一" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"><![CDATA[]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="工具" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-09-28T16:16:38+08:00</published><updated>2022-09-28T16:16:38+08:00</updated><id>http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -282,15 +282,8 @@ author: wangzm
   <li>编辑完成后，按 Esc 退出编辑，输入 :wq! 保存并退出</li>
   <li>输入 source .bash_profile 使环境变量生效</li>
   <li>终端输入 echo $PATH 查看当前环境变量，检查添加的变量是否生效</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[– layout: post title: Mac OS 环境变量配置 date: 2022-09-28 description: ….. img: post-6.jpg # Add image post (optional) tags: [Blog, vscode] author: wangzm –]]></summary></entry><entry><title type="html">Vscodetool</title><link href="http://localhost:4000/2022/05/12/vsCodeTool.html" rel="alternate" type="text/html" title="Vscodetool" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/vsCodeTool</id><content type="html" xml:base="http://localhost:4000/2022/05/12/vsCodeTool.html"><![CDATA[<p>–
-layout: post
-title: vscode 实用插件记录
-date: 2022-05-12
-description: …..
-img: post-6.jpg # Add image post (optional)
-tags: [Blog, vscode]
-author: wangzm
-–</p>]]></content><author><name></name></author><summary type="html"><![CDATA[– layout: post title: vscode 实用插件记录 date: 2022-05-12 description: ….. img: post-6.jpg # Add image post (optional) tags: [Blog, vscode] author: wangzm –]]></summary></entry><entry><title type="html">快速访问 GitHub</title><link href="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html" rel="alternate" type="text/html" title="快速访问 GitHub" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520</id><content type="html" xml:base="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html"><![CDATA[<ul>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[– layout: post title: Mac OS 环境变量配置 date: 2022-09-28 description: ….. img: post-6.jpg # Add image post (optional) tags: [Blog, vscode] author: wangzm –]]></summary></entry><entry><title type="html">vscode 实用插件记录</title><link href="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html" rel="alternate" type="text/html" title="vscode 实用插件记录" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html"><![CDATA[<p>TODO</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">快速访问 GitHub</title><link href="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html" rel="alternate" type="text/html" title="快速访问 GitHub" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520</id><content type="html" xml:base="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html"><![CDATA[<p>TODO 解锁更多使用姿势</p>
+<ul>
   <li>下载 <a href="https://github.com/oldj/SwitchHosts/blob/master/README_cn.md">SwitchHosts</a></li>
   <li>配置添加 Hosts
 https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520
@@ -375,149 +368,4 @@ git restore –staged <文件>..." 以取消暂存</文件></li>
 </code></pre></div></div>
 <ul>
   <li>当请求‘/api/login’,实际上请求的是‘www.app1.com:8001/index/index/login’</li>
-</ul>]]></content><author><name>wangzm</name></author><category term="wx" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry><entry><title type="html">puppeteer 完成极验验证</title><link href="http://localhost:4000/2018/09/10/puppeteer.html" rel="alternate" type="text/html" title="puppeteer 完成极验验证" /><published>2018-09-10T00:00:00+08:00</published><updated>2018-09-10T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/10/puppeteer</id><content type="html" xml:base="http://localhost:4000/2018/09/10/puppeteer.html"><![CDATA[<p><a href="https://github.com/wangzm123/resource/blob/master/index.js">源码点击这里</a>
-<!-- TOC --></p>
-
-<ul>
-  <li><a href="#安装puppeteer">安装puppeteer</a></li>
-  <li><a href="#项目中使用的基本api">项目中使用的基本API</a>
-    <ul>
-      <li><a href="#puppeteerlaunch">puppeteer.launch</a></li>
-      <li><a href="#page">page</a></li>
-      <li><a href="#mouse">mouse</a></li>
-    </ul>
-  </li>
-  <li><a href="#核心代码的实现与原理">核心代码的实现与原理</a></li>
-</ul>
-
-<!-- /TOC -->
-
-<h1 id="安装puppeteer">安装puppeteer</h1>
-<ul>
-  <li>执行cnpm install puppeteer</li>
-  <li>puppeteer 所有的操作基本都是异步的，所以需要使用 async, await</li>
-</ul>
-
-<h1 id="项目中使用的基本api">项目中使用的基本API</h1>
-<h2 id="puppeteerlaunch">puppeteer.launch</h2>
-<ul>
-  <li>puppeteer.launch 启动 Chromium 实例</li>
-  <li>puppeteer.launch(options)
-    <ul>
-      <li>headless  无头模式</li>
-      <li>slowMo 调整 puppeteer 的操作速度，以便在调试阶段可以看清楚发生了什么</li>
-      <li>devtools 打开控制台</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="page">page</h2>
-<ul>
-  <li>browser.newPage() 创建 page 实例</li>
-  <li>page.setViewPort() 设置页面的大小，一个 browser 实例可以有多个 page 实例， page 实例可是设置各自的大小</li>
-  <li>page.setJavaScriptEnavled() 设置页面是否禁用JS</li>
-  <li>page.goto() 页面导航</li>
-  <li>page.type(selector, value[,options]) selector 要输入元素的选择器，value 要输入的值，options.delay 输入没个字符的间隔，默认为0.每个字符的输入都会触发keydown, keypress/input,keyup 事件</li>
-  <li>page.waitFor() 根据入参不同，效果也不同。
-    <ul>
-      <li>入参为 string, 认为是 css 选择器或者 xpath, 根据是否包含‘//’进行判断， 为page.waitForSelector 或者 page.waiteForXPath 的缩写</li>
-      <li>入参为 function, 是 page.waitForFunction 的缩写</li>
-      <li>入参为 number，是认为是超时时间，在指定时间后返回 resolve</li>
-    </ul>
-  </li>
-  <li>page.$eval(selector, function[,…args])
-    <ul>
-      <li>selector 为选择器</li>
-      <li>funciton 为在浏览器实例上下执行的方法</li>
-      <li>…args 为给 fucntion 传的参数</li>
-    </ul>
-  </li>
-  <li>page.evalute(function[,…args])
-    <ul>
-      <li>function 在页面实例上下文中执行的方法</li>
-      <li>…args 传给function 的参数</li>
-      <li>返回 function 的执行结果</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="mouse">mouse</h2>
-<ul>
-  <li>通过 page.mouse 创建 mouse 实例， 该实例是在相对于窗口左上角， 基于 css 像素运行的。即具体操作的时候，要制定当前操作的位置</li>
-  <li>mouse.click(X, Y[,options])
-    <ul>
-      <li>X, Y 为要点击的位置，</li>
-      <li>options</li>
-    </ul>
-  </li>
-  <li>mouse.down([options])</li>
-  <li>mouse.move(X, Y[,options])
-    <ul>
-      <li>X,Y 为要移动到的位置</li>
-      <li>options.steps 控制移动的速度</li>
-    </ul>
-  </li>
-  <li>mouse.up([options])</li>
-</ul>
-
-<h1 id="核心代码的实现与原理">核心代码的实现与原理</h1>
-<ul>
-  <li>极验图片验证的原理是 canvas 两个图层，完整的背景图片（img1），一个是带缺口的图片(img2)。我们需要拿到 img2 的缺口位置，操作鼠标拖动至这个位置即可。
-    <ul>
-      <li>计算图片位置： 获取 img1, img2 的每个相同像素点的颜色，比较颜色差异，差异较大的视为可能存在的位置
-        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">evalute</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-<span class="kd">const</span> <span class="nx">img1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_canvas_fullbg</span><span class="dl">'</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">img2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_canvas_bg</span><span class="dl">'</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">piexDifrence</span> <span class="o">=</span> <span class="mi">30</span>
-<span class="kd">let</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">260</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span><span class="mi">160</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">ctx1</span> <span class="o">=</span> <span class="nx">img1</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">).</span><span class="nx">getImageData</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="kd">const</span> <span class="nx">ctx2</span> <span class="o">=</span> <span class="nx">img2</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">).</span><span class="nx">getImageData</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="kd">const</span> <span class="nx">data1</span> <span class="o">=</span> <span class="nx">ctx1</span><span class="p">.</span><span class="nx">data</span>
-    <span class="kd">const</span> <span class="nx">data2</span> <span class="o">=</span> <span class="nx">ctx2</span><span class="p">.</span><span class="nx">data</span>
-    <span class="kd">const</span> <span class="nx">res1</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">data1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="nx">data2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="kd">const</span> <span class="nx">res2</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">data1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="nx">data2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="kd">const</span> <span class="nx">res3</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">data1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="nx">data2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">res1</span> <span class="o">&gt;</span> <span class="nx">piexDifrence</span> <span class="o">&amp;&amp;</span> <span class="nx">res2</span> <span class="o">&gt;</span> <span class="nx">piexDifrence</span> <span class="o">&amp;&amp;</span> <span class="nx">res3</span> <span class="o">&gt;</span> <span class="nx">piexDifrence</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-<span class="cm">/** 此最大值最小值需调试*/</span>
-<span class="k">return</span> <span class="p">{</span><span class="na">min</span><span class="p">:</span> <span class="nx">res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">5</span><span class="p">,</span> <span class="na">max</span><span class="p">:</span> <span class="nx">res</span><span class="p">[</span><span class="nx">res</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span><span class="mi">50</span><span class="p">}</span>
-<span class="p">})</span>
-</code></pre></div>        </div>
-      </li>
-      <li>模拟用户操作，拖动图片
-        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">target</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_slider_button</span><span class="dl">'</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">start</span> <span class="o">=</span> <span class="nx">target</span><span class="p">.</span><span class="nx">boundingBox</span><span class="p">()</span>
-<span class="cm">/** 得到的原始点为按钮的左上角，要调整到按钮的中间，确保点击有效*/</span>
-<span class="kd">const</span> <span class="nx">startX</span> <span class="o">=</span> <span class="nx">start</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">10</span>
-<span class="kd">const</span> <span class="nx">startY</span> <span class="o">=</span> <span class="nx">start</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="mi">10</span>
-<span class="cm">/** 获取移动距离的数组*/</span>
-<span class="kd">const</span> <span class="nx">distance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">calculateDistance</span><span class="p">()</span>
-<span class="kd">const</span> <span class="nx">targetX</span> <span class="o">=</span> <span class="nx">startX</span> <span class="o">+</span> <span class="nx">distance</span><span class="p">.</span><span class="nx">min</span>
-<span class="kd">const</span> <span class="nx">targetY</span> <span class="o">=</span> <span class="nx">startY</span>
-<span class="cm">/** 此处操作要尽可能的模拟用户操作，不可直接把图片拉到指定位置，否则会失败*/</span>
-<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">startX</span><span class="p">,</span> <span class="nx">startY</span><span class="p">,</span> <span class="p">{</span><span class="na">delay</span><span class="p">:</span> <span class="mi">2000</span><span class="p">})</span>
-<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">down</span><span class="p">()</span>
-<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="nx">targetX</span> <span class="o">+</span> <span class="mi">30</span><span class="p">,</span> <span class="nx">targetY</span><span class="p">,</span> <span class="p">{</span><span class="na">steps</span><span class="p">:</span> <span class="mi">20</span><span class="p">})</span>
-<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">waitFor</span><span class="p">(</span><span class="mi">800</span><span class="p">)</span>
-<span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">mouse</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="nx">targetX</span><span class="p">,</span> <span class="nx">targetY</span><span class="p">,</span> <span class="p">{</span><span class="na">steps</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>
-</code></pre></div>        </div>
-      </li>
-      <li>判断拉动图片的结果，处理返回的错误信息
-        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">evalute</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-<span class="kd">const</span> <span class="nx">isSuccess</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_success_animate</span><span class="dl">'</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">isFinish</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.geetest_radar_tip_content</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHtml</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">尝试过多</span><span class="dl">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span>
-<span class="cm">/**此处可定义多种错误*/</span>
-<span class="p">})</span>
-<span class="k">return</span> <span class="nx">result</span>
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="puppeteer" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>
+</ul>]]></content><author><name>wangzm</name></author><category term="wx" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>

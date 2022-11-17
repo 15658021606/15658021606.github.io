@@ -7,6 +7,7 @@ tags: [Blog, github]
 author: wangzm
 ---
 
+TODO 解锁更多使用姿势
 - 下载 [SwitchHosts](https://github.com/oldj/SwitchHosts/blob/master/README_cn.md)
 - 配置添加 Hosts
   https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520
