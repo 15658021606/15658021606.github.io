@@ -1,4 +1,250 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-29T15:24:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-09-28T16:16:38+08:00</published><updated>2022-09-28T16:16:38+08:00</updated><id>http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-17T16:52:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>cmd</th>
+      <th>source</th>
+      <th>description</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mkdir</td>
+      <td>make</td>
+      <td>创建一个目录</td>
+      <td>mkdir dir</td>
+    </tr>
+    <tr>
+      <td>rmdir</td>
+      <td>remove</td>
+      <td>删除一个目录</td>
+      <td>rmdir dir</td>
+    </tr>
+    <tr>
+      <td>mv</td>
+      <td>move</td>
+      <td>移动或重命名一个目录或文件</td>
+      <td>mv dir1 dir2</td>
+    </tr>
+    <tr>
+      <td>cd</td>
+      <td>–</td>
+      <td>改变当前目录</td>
+      <td>cd dir</td>
+    </tr>
+    <tr>
+      <td>ls</td>
+      <td>–</td>
+      <td>显示当前目录的内容</td>
+      <td>ls</td>
+    </tr>
+    <tr>
+      <td>cmp</td>
+      <td>compare</td>
+      <td>比较两个文件是否有差异</td>
+      <td>cmp 01.js 02.js</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="文件操作">文件操作</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>cmd</th>
+      <th>source</th>
+      <th>description</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cat</td>
+      <td>–</td>
+      <td>显示或连接文件</td>
+      <td>cat 01.js</td>
+    </tr>
+    <tr>
+      <td>more</td>
+      <td>–</td>
+      <td>查看比价大的文件，可翻页，Q退出后，且查看的内容保留在终端</td>
+      <td>more 01.js</td>
+    </tr>
+    <tr>
+      <td>less</td>
+      <td>–</td>
+      <td>查看比较大的文件，可翻页，Q退出后，查看的内容不会保留在终端</td>
+      <td>less 01.js</td>
+    </tr>
+    <tr>
+      <td>od</td>
+      <td>–</td>
+      <td>读取指定文件，并将内容以八进制字码呈现</td>
+      <td>od 01.js</td>
+    </tr>
+    <tr>
+      <td>cp</td>
+      <td>copy</td>
+      <td>复制文件内容 ｜ cp 01.js 02.js</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>rm</td>
+      <td>remove</td>
+      <td>删除文件或目录,欲删除目录，需加上-rf参数</td>
+      <td>rm -rf dir</td>
+    </tr>
+    <tr>
+      <td>mv</td>
+      <td>–</td>
+      <td>移动或重命名一个目录或文件（第二个参数文件或目录存在就是移动， 不存在就是重命名）</td>
+      <td>mv 01.js 02</td>
+    </tr>
+    <tr>
+      <td>ln</td>
+      <td>link</td>
+      <td>链接文件或目录</td>
+      <td>ln 01.js 04.js</td>
+    </tr>
+    <tr>
+      <td>find</td>
+      <td>–</td>
+      <td>查找文件或目录</td>
+      <td>find . -name ‘*.js’ <a href="#find">详解</a></td>
+    </tr>
+    <tr>
+      <td>open</td>
+      <td>–</td>
+      <td>使用默认程序打开文件</td>
+      <td>open 01.js</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="find"></a></p>
+
+<h3 id="find-命令详解">find 命令详解</h3>
+
+<h4 id="一find-命令语法格式">一、find 命令语法格式</h4>
+
+<p>find[路径][选项][操作]<br />
+选项参数对照表</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-name</td>
+      <td>根据文件名查找</td>
+    </tr>
+    <tr>
+      <td>-perm</td>
+      <td>根据文件权限查找</td>
+    </tr>
+    <tr>
+      <td>-prune</td>
+      <td>该选项可以排出某些查找目录</td>
+    </tr>
+    <tr>
+      <td>-user</td>
+      <td>根据文件属主查找</td>
+    </tr>
+    <tr>
+      <td>-group</td>
+      <td>根据文件属组查找</td>
+    </tr>
+    <tr>
+      <td>-minute -n｜+n</td>
+      <td>根据文件更改时间查找</td>
+    </tr>
+    <tr>
+      <td>-type</td>
+      <td>按文件类型查找</td>
+    </tr>
+    <tr>
+      <td>-size -n｜+n</td>
+      <td>按文件大小查找</td>
+    </tr>
+    <tr>
+      <td>-mindepth n</td>
+      <td>从n级子目录开始搜索</td>
+    </tr>
+    <tr>
+      <td>-maxdepth n</td>
+      <td>最多搜索到n级子目录</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="二常用选型详解">二、常用选型详解</h4>
+
+<p>-name 查找/etc目录下以conf结尾的文件，文件名区分大小写 find /etc -name ‘*.conf’<br />
+-iname 同-name,忽略大小写<br />
+-user 查找文件所属用户为 zhangsan 的文件 find . -user zhangsan<br />
+-group   查找文件所属组为 dev 的所有文件，例如：find . -group dev<br />
+-type　　根据类型查找：如下</p>
+
+<p>　　　　　　f　　 文件　　　　　　　　find . -type f</p>
+
+<p>　　　　　　d　　目录　　　　　　　　find . -type d</p>
+
+<p>　　　　　　c　　字符设备文件　　　　find . -type c</p>
+
+<p>　　　　　　b　　块设备文件　　　　　find . -type b</p>
+
+<p>　　　　　　l　　 链接文件　　　　　　find . -type l</p>
+
+<p>　　　　　　p　　管道文件　　　　　　find . -type p</p>
+
+<p>-size　   根据文件大小查询</p>
+
+<p>　　　　  -n　　小于 大小为 n 的文件</p>
+
+<p>　　　　  +n　　大于 大小为 n 的文件</p>
+
+<p>　　　　　举例1：查找 /ect 目录下，小于 10000 字节的文件。 find /etc -size +10000c</p>
+
+<p>　　　　　举例2：查找 /etc 目录下，大于 1M 的文件。find /etc -size -1M</p>
+
+<p>-mtime　　</p>
+
+<p>　　　　　-n　　n 天以内修改的文件。</p>
+
+<p>　　　　　+n　　n 天以外修改的文件。</p>
+
+<p>　　　　　n　　  正好 n天 修改的文件</p>
+
+<p>　　　　　举例1: 查询 /etc 目录下，5天以内修改 且以 conf 结尾的文件。　find /etc -mtime -5 -name ‘*.conf’</p>
+
+<p>　　　　　举例2: 查询 /etc 目录下，10天之前修改，且属于 yangyang 的文件。　　find /etc -mtime +10 -user yangyang</p>
+
+<p>-mmin　　</p>
+
+<p>　　　　　-n　　n 分钟以内修改过的文件</p>
+
+<p>　　　　　+n　　n 分钟之前修改过的文件</p>
+
+<p>　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的文件。 　　find /etc -mmin +30</p>
+
+<p>　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的目录。 　　find /etc -mmin -30 -type d</p>
+
+<p>-mindepth n　　从第 n 级目录开始搜索</p>
+
+<p>　　　　　举例：从 /etc 的第三级子目录开始搜索。  find /etc -mindepth 3</p>
+
+<p>-maxdepth n　　表示至多搜索到第 n-1 级子目录。</p>
+
+<p>　　　　　举例1: 在 /etc 中搜索符合条件的文件，但最多搜索到 2级 子目录。　　find /etc -maxdepth 3 -name ‘*.conf’</p>
+
+<p>　　　　　举例2: find /etc -type f -name ‘*.conf’ -size +10k -maxdepthc 2</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="terminal" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-09-28T16:16:38+08:00</published><updated>2022-09-28T16:16:38+08:00</updated><id>http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -274,19 +520,4 @@ git restore –staged <文件>..." 以取消暂存</文件></li>
       </li>
     </ul>
   </li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="puppeteer" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry><entry><title type="html">vsCode 代码合并提示需要填写合并代码原因如何操作</title><link href="http://localhost:4000/2018/09/10/gitvim.html" rel="alternate" type="text/html" title="vsCode 代码合并提示需要填写合并代码原因如何操作" /><published>2018-09-10T00:00:00+08:00</published><updated>2018-09-10T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/10/gitvim</id><content type="html" xml:base="http://localhost:4000/2018/09/10/gitvim.html"><![CDATA[<h1 id="解决-git-合并代码或者提交时候的这个报错">解决 git 合并代码或者提交时候的这个报错</h1>
-<p>在 git pull, 或者 git merge 的时候会遇到这样的一个提示信息， ‘Please enter a commit message to explain why this merge is necessary’</p>
-
-<p><img src="../assets/img/giterror.jpg" alt="avatar" />
-有两种解决办法：</p>
-<h1 id="忽略这个提示">忽略这个提示</h1>
-<ul>
-  <li>esc</li>
-  <li>:wq
-    <h1 id="填写为什么要合并的原因">填写为什么要合并的原因</h1>
-  </li>
-  <li>i, 进入 insert 模式</li>
-  <li>填写信息</li>
-  <li>esc</li>
-  <li>:wq 退出</li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="puppeteer" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>

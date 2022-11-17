@@ -1,0 +1,123 @@
+---
+layout: post
+title: 终端命令
+date: 2022-11-17
+description: .....
+img: post-6.jpg # Add image post (optional)
+tags: [Blog, terminal]
+author: wangzm
+---
+
+### 目录操作
+
+|  cmd  |  source  |  description  |  example  |
+|  ---  |  ---  |  --- |  ---  |
+|mkdir| make |  创建一个目录 | mkdir dir |
+|rmdir| remove|   删除一个目录  | rmdir dir |
+|mv| move | 移动或重命名一个目录或文件| mv dir1 dir2|
+|cd| -- | 改变当前目录|cd dir|
+|ls| -- | 显示当前目录的内容| ls |
+|cmp| compare | 比较两个文件是否有差异| cmp 01.js 02.js|
+
+### 文件操作
+
+| cmd | source | description | example|
+|  ---  |  ---  |  --- |  ---  |
+| cat | -- | 显示或连接文件| cat 01.js|
+| more | -- | 查看比价大的文件，可翻页，Q退出后，且查看的内容保留在终端| more 01.js|
+| less | -- | 查看比较大的文件，可翻页，Q退出后，查看的内容不会保留在终端| less 01.js|
+| od | -- | 读取指定文件，并将内容以八进制字码呈现| od 01.js|
+| cp | copy | 复制文件内容 ｜ cp 01.js 02.js|
+| rm | remove | 删除文件或目录,欲删除目录，需加上-rf参数 | rm -rf dir|
+| mv | -- | 移动或重命名一个目录或文件（第二个参数文件或目录存在就是移动， 不存在就是重命名）| mv 01.js 02|
+| ln | link | 链接文件或目录 | ln 01.js 04.js|
+| find | -- | 查找文件或目录 | find . -name '*.js' [详解](#find)|
+| open | -- | 使用默认程序打开文件 | open 01.js |
+
+<a name="find">
+
+### find 命令详解
+
+#### 一、find 命令语法格式
+
+find[路径][选项][操作]\
+选项参数对照表
+
+| 选项 | 含义 |
+| ---  |  ---  |
+| -name | 根据文件名查找 |
+| -perm | 根据文件权限查找 |
+| -prune | 该选项可以排出某些查找目录 |
+| -user | 根据文件属主查找 |
+| -group | 根据文件属组查找 |
+| -minute -n｜+n | 根据文件更改时间查找 |
+| -type | 按文件类型查找 |
+| -size -n｜+n |  按文件大小查找 |
+| -mindepth n | 从n级子目录开始搜索 |
+| -maxdepth n | 最多搜索到n级子目录|
+
+#### 二、常用选型详解
+
+-name 查找/etc目录下以conf结尾的文件，文件名区分大小写 find /etc -name '*.conf'\
+-iname 同-name,忽略大小写\
+-user 查找文件所属用户为 zhangsan 的文件 find . -user zhangsan\
+-group   查找文件所属组为 dev 的所有文件，例如：find . -group dev\
+-type　　根据类型查找：如下
+
+　　　　　　f　　 文件　　　　　　　　find . -type f
+
+　　　　　　d　　目录　　　　　　　　find . -type d
+
+　　　　　　c　　字符设备文件　　　　find . -type c
+
+　　　　　　b　　块设备文件　　　　　find . -type b
+
+　　　　　　l　　 链接文件　　　　　　find . -type l
+
+　　　　　　p　　管道文件　　　　　　find . -type p
+
+-size　   根据文件大小查询
+
+　　　　  -n　　小于 大小为 n 的文件
+
+　　　　  +n　　大于 大小为 n 的文件
+
+　　　　　举例1：查找 /ect 目录下，小于 10000 字节的文件。 find /etc -size +10000c
+
+　　　　　举例2：查找 /etc 目录下，大于 1M 的文件。find /etc -size -1M
+
+-mtime　　
+
+　　　　　-n　　n 天以内修改的文件。
+
+　　　　　+n　　n 天以外修改的文件。
+
+　　　　　n　　  正好 n天 修改的文件
+
+　　　　　举例1: 查询 /etc 目录下，5天以内修改 且以 conf 结尾的文件。　find /etc -mtime -5 -name '*.conf'
+
+　　　　　举例2: 查询 /etc 目录下，10天之前修改，且属于 yangyang 的文件。　　find /etc -mtime +10 -user yangyang
+
+-mmin　　
+
+　　　　　-n　　n 分钟以内修改过的文件
+
+　　　　　+n　　n 分钟之前修改过的文件
+
+　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的文件。 　　find /etc -mmin +30
+
+　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的目录。 　　find /etc -mmin -30 -type d
+
+-mindepth n　　从第 n 级目录开始搜索
+
+　　　　　举例：从 /etc 的第三级子目录开始搜索。  find /etc -mindepth 3
+
+-maxdepth n　　表示至多搜索到第 n-1 级子目录。
+
+　　　　　举例1: 在 /etc 中搜索符合条件的文件，但最多搜索到 2级 子目录。　　find /etc -maxdepth 3 -name '*.conf'
+
+　　　　　举例2: find /etc -type f -name '*.conf' -size +10k -maxdepthc 2
+
+
+
+
