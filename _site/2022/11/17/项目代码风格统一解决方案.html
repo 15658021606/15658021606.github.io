@@ -48,7 +48,300 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    
+    <h3 id="一集成editorconfig配置">一、集成editorconfig配置</h3>
+<p><a href="http://editorconfig.org">Editorconfig</a> 可以帮助同一项目的多个开发人员维护一致的代码风格。</p>
+
+<p>vscode 需要安装插件EditorConfig for VS Code</p>
+
+<p>在根目录创建.editorconfig文件</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># http://editorconfig.org
+
+root = true
+
+[*] # 表示所有文件适用
+charset = utf-8 # 设置文件字符集为 utf-8
+indent_style = space # 缩进风格（tab | space）
+indent_size = 2 # 缩进大小
+end_of_line = lf # 控制换行类型(lf | cr | crlf)
+trim_trailing_whitespace = true # 去除行首的任意空白字符
+insert_final_newline = true # 始终在文件末尾插入一个新行
+
+[*.md] # 表示仅 md 文件适用以下规则
+max_line_length = off
+trim_trailing_whitespace = false
+</code></pre></div></div>
+
+<h3 id="二使用prettier工具">二、使用prettier工具</h3>
+
+<p><a href="https://www.prettier.cn/">Prettier</a> 是一款强大的代码格式化工具，支持 JavaScript、TypeScript、CSS、SCSS、Less、JSX、Angular、Vue、GraphQL、JSON、Markdown 等语言，基本上前端能用到的文件格式它都可以搞定，是当下最流行的代码格式化工具。</p>
+
+<p>1、安装prettier</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">prettier</span> <span class="o">-</span><span class="nx">D</span>
+</code></pre></div></div>
+
+<p>2、配置.prettier文件</p>
+
+<ul>
+  <li>useTabs：使用tab缩进还是空格缩进，选择false；</li>
+  <li>tabWidth：tab是空格的情况下，是几个空格，选择2个；</li>
+  <li>printWidth：当行字符的长度，推荐80，也有人喜欢100或者120；</li>
+  <li>singleQuote：使用单引号还是双引号，选择true，使用单引号；</li>
+  <li>trailingComma：在多行输入的尾逗号是否添加，设置为 none；</li>
+  <li>semi：语句末尾是否要加分号，默认值true，选择false表示不加；</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">useTabs</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">tabWidth</span><span class="dl">"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">printWidth</span><span class="dl">"</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">singleQuote</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">trailingComma</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">semi</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>3、创建.prettierignore忽略文件</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">/</span><span class="nx">dist</span><span class="cm">/*
+.local
+.output.js
+/node_modules/**
+
+**/</span><span class="o">*</span><span class="p">.</span><span class="nx">svg</span>
+<span class="o">**</span><span class="cm">/*.sh
+
+/public/*
+</span></code></pre></div></div>
+
+<p>4、VSCode 需要安装prettier - Code formatter 插件</p>
+
+<p>5、测试prettier是否生效</p>
+<ul>
+  <li>测试一：在编辑器中保存代码</li>
+  <li>测试二：配置一次性修改命令(此方法也可在接手一个旧项目时，统一一次性全局format，统一项目代码风格。注意还需要配置对应的lint检测)</li>
+</ul>
+
+<p>在package.json文件中配置scripts</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">prettier</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">prettier --write .</span><span class="dl">"</span>
+</code></pre></div></div>
+
+<p>执行npm run prettier 将项目中所有代码格式化</p>
+
+<h4 id="三使用eslint检测">三、使用ESLint检测</h4>
+
+<p>1、安装eslint</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">eslint</span> <span class="o">-</span><span class="nx">D</span>
+</code></pre></div></div>
+
+<p>2、VSCode 安装ESLint插件
+3、解决eslint和prettier冲突的问题</p>
+
+<p>安装插件</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">i</span> <span class="nx">eslint</span><span class="o">-</span><span class="nx">plugin</span><span class="o">-</span><span class="nx">prettier</span> <span class="nx">eslint</span><span class="o">-</span><span class="nx">config</span><span class="o">-</span><span class="nx">prettier</span> <span class="o">-</span><span class="nx">D</span>
+</code></pre></div></div>
+
+<p>然后在.eslintrc.js文件中添加以下配置：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">extends</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+		<span class="dl">"</span><span class="s2">plugin:prettier/recommended</span><span class="dl">"</span> <span class="c1">// 添加到数组的最后一个元素</span>
+	<span class="p">]</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>4、在VSCode设置中勾选Format On Save</p>
+
+<h4 id="四git-husky和eslint">四、git Husky和eslint</h4>
+
+<p>虽然我们已经要求项目使用eslint了，但是不能保证组员提交代码之前都将eslint中的问题解决掉了:</p>
+
+<ul>
+  <li>也就是我们希望保证代码仓库中的代码都是符合eslint规范的；</li>
+  <li>那么我们需要在组员执行 git commit 命令的时候对其进行校验，如果不符合eslint规范，那么自动通过规范进行修复；</li>
+</ul>
+
+<p>那么如何做到这一点呢？可以通过Husky工具：</p>
+
+<ul>
+  <li>husky是一个git hook工具，可以帮助我们触发git提交的各个阶段：pre-commit、commit-msg、pre-push</li>
+</ul>
+
+<p>如何使用husky呢？</p>
+
+<p>这里我们可以使用自动配置命令：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npx</span> <span class="nx">husky</span><span class="o">-</span><span class="nx">init</span> <span class="o">&amp;&amp;</span> <span class="nx">npm</span> <span class="nx">install</span>
+<span class="nx">npm</span> <span class="nx">install</span> <span class="nx">lint</span><span class="o">-</span><span class="nx">staged</span> <span class="o">-</span><span class="nx">D</span>
+</code></pre></div></div>
+
+<p>这里会做三件事：
+1.安装husky相关的依赖：
+2.在项目目录下创建 .husky 文件夹：
+3.在package.json中添加一个脚本：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">prepare</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">husky install</span><span class="dl">"</span>
+</code></pre></div></div>
+<p>接下来，我们需要去完成一个操作：在进行commit时，执行lint脚本，在package.json 中配置</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">husky</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">hooks</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">pre-commit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">lint-staged</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">lint-staged</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">**/*.less</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">stylelint --syntax less</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">**/*.{js,jsx,ts,tsx}</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">npm run lint-staged:js</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">**/*.{js,jsx,tsx,ts,less,md,json}</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="dl">"</span><span class="s2">prettier --write</span><span class="dl">"</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>这个时候我们执行git commit的时候会自动对代码进行lint校验。</p>
+
+<h4 id="五git-commit-规范">五、git commit 规范</h4>
+
+<p>1、代码提交风格</p>
+
+<p>通常我们的git commit会按照统一的风格来提交，这样可以快速定位每次提交的内容，方便之后对版本进行控制。</p>
+
+<p>Commitizen 是一个帮助我们编写规范 commit message 的工具</p>
+
+<p>1、安装Commitizen</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">commitizen</span> <span class="o">-</span><span class="nx">D</span>
+</code></pre></div></div>
+
+<p>2、安装cz-conventional-changelog，并且初始化cz-conventional-changelog：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npx</span> <span class="nx">commitizen</span> <span class="nx">init</span> <span class="nx">cz</span><span class="o">-</span><span class="nx">conventional</span><span class="o">-</span><span class="nx">changelog</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">exact</span>
+</code></pre></div></div>
+
+<p>并且在package.json中进行配置：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">config</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">commitizen</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">path</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">./node_modules/cz-conventional-changelog</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">},</span>
+</code></pre></div></div>
+
+<p>这个时候我们提交代码需要使用 npx cz：</p>
+
+<ul>
+  <li>第一步是选择type，本次更新的类型</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>作用</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>feat</td>
+      <td>新增特性(feature)</td>
+    </tr>
+    <tr>
+      <td>fix</td>
+      <td>修复Bug(bug fix)</td>
+    </tr>
+    <tr>
+      <td>doc</td>
+      <td>修改文档(documentation)</td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>代码格式修改(white-space,formatting,missing semi colons, etc)</td>
+    </tr>
+    <tr>
+      <td>refactor</td>
+      <td>代码重构(refactor)</td>
+    </tr>
+    <tr>
+      <td>perf</td>
+      <td>改善性能(A code change that improve performance)</td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>测试(when adding missing tests)</td>
+    </tr>
+    <tr>
+      <td>build</td>
+      <td>变更项目构建或外部依赖(例如：scopes: webpack, gulp, webpack 等)</td>
+    </tr>
+    <tr>
+      <td>ci</td>
+      <td>更改持续集成软件的配置文件和 package 中的 script 命令</td>
+    </tr>
+    <tr>
+      <td>chore</td>
+      <td>变更构建流程或辅助工具(比如更改测试环境)</td>
+    </tr>
+    <tr>
+      <td>revert</td>
+      <td>代码回退</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p>第二步选择本次修改的范围（作用域）</p>
+  </li>
+  <li>
+    <p>第三步选择提交的信息</p>
+  </li>
+  <li>
+    <p>第四步提交详细的描述信息</p>
+  </li>
+  <li>
+    <p>第五步是否是一次重大的更改</p>
+  </li>
+  <li>
+    <p>第六步是否影响某个open issue</p>
+  </li>
+</ul>
+
+<p>我们也可以在scripts中构建一个命令来执行 cz：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="dl">"</span><span class="s2">commit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">git-cz</span><span class="dl">"</span>
+</code></pre></div></div>
+<p>2、 代码提交验证</p>
+
+<p>如果我们按照cz来规范了提交风格，但是依然有同事通过 git commit 按照不规范的格式提交应该怎么办呢？</p>
+
+<p>我们可以通过commitlint来限制提交；</p>
+
+<p>1、安装 @commitlint/config-conventional 和 @commitlint/cli</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">npm</span> <span class="nx">i</span> <span class="p">@</span><span class="nd">commitlint</span><span class="sr">/config-conventional @commitlint/</span><span class="nx">cli</span> <span class="o">-</span><span class="nx">D</span>
+</code></pre></div></div>
+
+<p>2、在根目录创建commitlint.config.js文件，配置commitlint</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">extends</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">@commitlint/config-conventional</span><span class="dl">'</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>3、使用husky生成commit-msg文件，验证提交信息：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npx</span> <span class="nx">husky</span> <span class="nx">add</span> <span class="p">.</span><span class="nx">husky</span><span class="o">/</span><span class="nx">commit</span><span class="o">-</span><span class="nx">msg</span> <span class="dl">"</span><span class="s2">npx --no-install commitlint --edit $1</span><span class="dl">"</span>
+</code></pre></div></div>
+<p>直接使用git commit 提交, 在husky hook  中添加</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="dl">"</span><span class="s2">commit-msg</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">commitlint -E HUSKY_GIT_PARAMS</span><span class="dl">"</span>
+</code></pre></div></div>
+
 
   </div><a class="u-url" href="/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" hidden></a>
 </article>

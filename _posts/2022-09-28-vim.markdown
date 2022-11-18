@@ -8,6 +8,7 @@ tags: [Blog, vscode]
 author: wangzm
 --
 
+TODO 
 - 终端输入 vim ~/.bash_profile
 - 输入 i 进入编辑模式，然后输入环境变量：
 
