@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-18T11:29:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-18T17:23:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">vi 编辑器基础</title><link href="http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8.html" rel="alternate" type="text/html" title="vi 编辑器基础" /><published>2022-11-18T00:00:00+08:00</published><updated>2022-11-18T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8.html"><![CDATA[<h4 id="一启动和退出">一、启动和退出</h4>
+
+<ol>
+  <li>启动</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim filename
+</code></pre></div></div>
+
+<p>vi 不指定文件名，显示vi的版本信息</p>
+
+<p><img src="/images/vim.png" alt="如" /></p>
+
+<p>vi编辑器有三种模式：命令模式、输入模式、末行模式</p>
+
+<ul>
+  <li>
+    <p>命令模式：vi 启动后默认进入命令模式，从这个模式可以使用命令切换到另外两种模式， 同时无论在任何模式下只要按[esc]键都可以返回命令模式（注意输入法需要是英文）。命令模式中输入[i]就进入输入模式编辑文件。</p>
+  </li>
+  <li>
+    <p>输入模式：在这个模式中可以进行修改、编辑、输入等工作， 在编辑器最后一行显示“–INSERT–”表示vi进入了输入模式。当我们完成修改输入操作需要保存文件的时候，需要先返回命令模式，再进入末行模式进行保存。</p>
+  </li>
+  <li>
+    <p>末行模式：在命令模式输入“:”，即可进入末行模式。</p>
+  </li>
+</ul>
+
+<h4 id="二保存和移动">二、保存和移动</h4>
+
+<p>退出</p>
+
+<ul>
+  <li>q! 强制退出，同时没有保存文件, 如果文件已经保存，可以使用q退出，保存退出使用wq,,保存强制退出使用wq!</li>
+</ul>
+
+<p>保存</p>
+
+<ul>
+  <li>w 保存文件， 另存为可以使用 w filename</li>
+</ul>
+
+<p>光标的移动</p>
+
+<ul>
+  <li>方向键光标移动</li>
+</ul>
+
+<p>翻页命令</p>
+
+<ul>
+  <li>Ctrl + F 向前翻整页，Ctrl + U 向前翻半页</li>
+  <li>Ctrl + B 向后翻整页，Ctrl + D 向后翻半页</li>
+</ul>
+
+<p>行内快速跳转</p>
+
+<ul>
+  <li>^ 移动到本行行首</li>
+  <li>$ 移动到本行行尾</li>
+</ul>
+
+<p>显示行号和取消行号（末行模式使用）</p>
+
+<ul>
+  <li>set nu 显示行号</li>
+  <li>set nonu 取消行号</li>
+</ul>
+
+<p>在命令模式下，可以使用以下命令快速的在行间跳转</p>
+
+<ul>
+  <li>1G 跳转至行首</li>
+  <li>G 跳转至行尾</li>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vim" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
 
 <table>
   <thead>
@@ -552,18 +625,7 @@ trim_trailing_whitespace = false
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Vim</title><link href="http://localhost:4000/2022/09/28/vim.html" rel="alternate" type="text/html" title="Vim" /><published>2022-09-28T00:00:00+08:00</published><updated>2022-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2022/09/28/vim</id><content type="html" xml:base="http://localhost:4000/2022/09/28/vim.html"><![CDATA[<p>–
-layout: post
-title: Mac OS 环境变量配置
-date: 2022-09-28
-description: …..
-img: post-6.jpg # Add image post (optional)
-tags: [Blog, vscode]
-author: wangzm
-–</p>
-
-<p>TODO</p>
-<ul>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Mac OS 环境变量配置</title><link href="http://localhost:4000/2022/09/28/mac%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html" rel="alternate" type="text/html" title="Mac OS 环境变量配置" /><published>2022-09-28T00:00:00+08:00</published><updated>2022-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2022/09/28/mac%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE</id><content type="html" xml:base="http://localhost:4000/2022/09/28/mac%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"><![CDATA[<ul>
   <li>终端输入 vim ~/.bash_profile</li>
   <li>输入 i 进入编辑模式，然后输入环境变量：</li>
 </ul>
@@ -575,7 +637,7 @@ author: wangzm
   <li>编辑完成后，按 Esc 退出编辑，输入 :wq! 保存并退出</li>
   <li>输入 source .bash_profile 使环境变量生效</li>
   <li>终端输入 echo $PATH 查看当前环境变量，检查添加的变量是否生效</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[– layout: post title: Mac OS 环境变量配置 date: 2022-09-28 description: ….. img: post-6.jpg # Add image post (optional) tags: [Blog, vscode] author: wangzm –]]></summary></entry><entry><title type="html">vscode 实用插件记录</title><link href="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html" rel="alternate" type="text/html" title="vscode 实用插件记录" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html"><![CDATA[<p>TODO</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">快速访问 GitHub</title><link href="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html" rel="alternate" type="text/html" title="快速访问 GitHub" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520</id><content type="html" xml:base="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html"><![CDATA[<p>TODO 解锁更多使用姿势</p>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">vscode 实用插件记录</title><link href="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html" rel="alternate" type="text/html" title="vscode 实用插件记录" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html"><![CDATA[<p>TODO</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">快速访问 GitHub</title><link href="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html" rel="alternate" type="text/html" title="快速访问 GitHub" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520</id><content type="html" xml:base="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html"><![CDATA[<p>TODO 解锁更多使用姿势</p>
 <ul>
   <li>下载 <a href="https://github.com/oldj/SwitchHosts/blob/master/README_cn.md">SwitchHosts</a></li>
   <li>配置添加 Hosts
@@ -601,7 +663,26 @@ git restore –staged <文件>..." 以取消暂存</文件></li>
 再 git push origin [分支名] –force 覆盖掉远端的版本信息，使远端的仓库也回退相应版本</li>
     </ul>
   </li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">vue-cli 3代码压缩去掉 console.log 信息</title><link href="http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin.html" rel="alternate" type="text/html" title="vue-cli 3代码压缩去掉 console.log 信息" /><published>2018-09-28T00:00:00+08:00</published><updated>2018-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin</id><content type="html" xml:base="http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin.html"><![CDATA[<p>默认的 vue-cli 3 配置项，打包的 JS 代码，并不会去掉 console 信息，经过查文档，终于搞定。
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">git stash</title><link href="http://localhost:4000/2018/09/28/gitstash.html" rel="alternate" type="text/html" title="git stash" /><published>2018-09-28T00:00:00+08:00</published><updated>2018-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/28/gitstash</id><content type="html" xml:base="http://localhost:4000/2018/09/28/gitstash.html"><![CDATA[<p>当在一个分支上工作一段时间之后，需要临时切换到其它分支上，但是当前的工作还没完成一个功能点，为了避免增加没有意义的提交信息，可以先把当前工作区域的内容储藏起来，切换到其它分支，完成之后再切换回当前分支。</p>
+<ul>
+  <li>git stash / git stash save 内容储藏起来。项目回到上次提交完成时候的干净状态。</li>
+  <li>git stash  –keep-index 告诉 git 不要存储通过 git add 命令暂存的东西
+(不太明白，用起来感觉跟 git stash 一样)</li>
+  <li>git stash –include-untracked / git stash -u , 告诉 git 暂存创建的未跟踪的文件</li>
+  <li>git stash –patch 交互式提示文件的修改</li>
+  <li>git stash branch testChanges 把储藏空间的内容座位一份新的分支处理，处理完成之后可以把储藏空间的内容清除掉</li>
+  <li>git stash list 查看储存空间的列表</li>
+  <li>git stash pop 把储存空间最新的一次存储取出来</li>
+  <li>git stash apply stash@{0} 取出指定的储存信息</li>
+  <li>git stash drop stash@{0} 把指定的储存从栈里清除</li>
+  <li>git clean 从工作目录中移除未被追踪的文件,慎重使用，具体使用具体查看文档。
+    <ul>
+      <li>git clean -d -f 强制移除</li>
+      <li>git clean -d -n 做一次演示，告诉你要移除什么</li>
+      <li>任何与 .gitignore 或其它忽略文件相匹配的文件都不会被移除。如果这些文件也想要移除， git clean -d -n -x</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry><entry><title type="html">vue-cli 3代码压缩去掉 console.log 信息</title><link href="http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin.html" rel="alternate" type="text/html" title="vue-cli 3代码压缩去掉 console.log 信息" /><published>2018-09-28T00:00:00+08:00</published><updated>2018-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin</id><content type="html" xml:base="http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin.html"><![CDATA[<p>默认的 vue-cli 3 配置项，打包的 JS 代码，并不会去掉 console 信息，经过查文档，终于搞定。
 增加 vue.config.js 的配置项， 使用 uglifyjs-webpack-plugin 压缩代码.此处调试的时候要记得清除浏览器缓存，否则可能已经配置正确了，因为浏览器的缓存机制导致看到的效果不正确。</p>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">uglifyjs</span><span class="o">-</span><span class="nx">webpack</span><span class="o">-</span><span class="nx">plugin</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span>
 <span class="c1">// vue.config.js </span>
@@ -629,36 +710,4 @@ git restore –staged <文件>..." 以取消暂存</文件></li>
 <ul>
   <li>uglifyOptions 配置项看<a href="'https://github.com/mishoo/UglifyJS2#minify-options'">这里</a></li>
   <li>compress 配置项看<a href="'https://github.com/mishoo/UglifyJS2#compress-options'">这里</a></li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vue-cli" /><summary type="html"><![CDATA[You will find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry><entry><title type="html">git stash</title><link href="http://localhost:4000/2018/09/28/gitstash.html" rel="alternate" type="text/html" title="git stash" /><published>2018-09-28T00:00:00+08:00</published><updated>2018-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/28/gitstash</id><content type="html" xml:base="http://localhost:4000/2018/09/28/gitstash.html"><![CDATA[<p>当在一个分支上工作一段时间之后，需要临时切换到其它分支上，但是当前的工作还没完成一个功能点，为了避免增加没有意义的提交信息，可以先把当前工作区域的内容储藏起来，切换到其它分支，完成之后再切换回当前分支。</p>
-<ul>
-  <li>git stash / git stash save 内容储藏起来。项目回到上次提交完成时候的干净状态。</li>
-  <li>git stash  –keep-index 告诉 git 不要存储通过 git add 命令暂存的东西
-(不太明白，用起来感觉跟 git stash 一样)</li>
-  <li>git stash –include-untracked / git stash -u , 告诉 git 暂存创建的未跟踪的文件</li>
-  <li>git stash –patch 交互式提示文件的修改</li>
-  <li>git stash branch testChanges 把储藏空间的内容座位一份新的分支处理，处理完成之后可以把储藏空间的内容清除掉</li>
-  <li>git stash list 查看储存空间的列表</li>
-  <li>git stash pop 把储存空间最新的一次存储取出来</li>
-  <li>git stash apply stash@{0} 取出指定的储存信息</li>
-  <li>git stash drop stash@{0} 把指定的储存从栈里清除</li>
-  <li>git clean 从工作目录中移除未被追踪的文件,慎重使用，具体使用具体查看文档。
-    <ul>
-      <li>git clean -d -f 强制移除</li>
-      <li>git clean -d -n 做一次演示，告诉你要移除什么</li>
-      <li>任何与 .gitignore 或其它忽略文件相匹配的文件都不会被移除。如果这些文件也想要移除， git clean -d -n -x</li>
-    </ul>
-  </li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry><entry><title type="html">webpack proxyTable 代理转发配置</title><link href="http://localhost:4000/2018/09/25/proxyTable.html" rel="alternate" type="text/html" title="webpack proxyTable 代理转发配置" /><published>2018-09-25T00:00:00+08:00</published><updated>2018-09-25T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/25/proxyTable</id><content type="html" xml:base="http://localhost:4000/2018/09/25/proxyTable.html"><![CDATA[<hr />
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">proxyTable</span><span class="p">:</span> <span class="p">{</span>
-  <span class="dl">'</span><span class="s1">/api</span><span class="dl">'</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nl">target</span><span class="p">:</span> <span class="dl">'</span><span class="s1">www.app1.com:8001</span><span class="dl">'</span><span class="p">,</span>
-    <span class="nx">changeOrigin</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nx">pathRewrite</span><span class="p">:</span> <span class="p">{</span>
-      <span class="dl">'</span><span class="s1">^/api</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/index/index</span><span class="dl">'</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<ul>
-  <li>当请求‘/api/login’,实际上请求的是‘www.app1.com:8001/index/index/login’</li>
-</ul>]]></content><author><name>wangzm</name></author><category term="wx" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vue-cli" /><summary type="html"><![CDATA[You will find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>
