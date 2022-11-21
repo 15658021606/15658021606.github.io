@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-18T17:23:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">vi 编辑器基础</title><link href="http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8.html" rel="alternate" type="text/html" title="vi 编辑器基础" /><published>2022-11-18T00:00:00+08:00</published><updated>2022-11-18T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8.html"><![CDATA[<h4 id="一启动和退出">一、启动和退出</h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-21T15:45:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🫧</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">docker 入门</title><link href="http://localhost:4000/2022/11/21/docker%E5%85%A5%E9%97%A8.html" rel="alternate" type="text/html" title="docker 入门" /><published>2022-11-21T00:00:00+08:00</published><updated>2022-11-21T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/21/docker%E5%85%A5%E9%97%A8</id><content type="html" xml:base="http://localhost:4000/2022/11/21/docker%E5%85%A5%E9%97%A8.html"><![CDATA[<h1 id="todo">TODO</h1>]]></content><author><name></name></author><summary type="html"><![CDATA[学完就忘了，还是要认真做笔记啊]]></summary></entry><entry><title type="html">vi 编辑器基础</title><link href="http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8.html" rel="alternate" type="text/html" title="vi 编辑器基础" /><published>2022-11-18T00:00:00+08:00</published><updated>2022-11-18T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/2022/11/18/vi%E7%BC%96%E8%BE%91%E5%99%A8.html"><![CDATA[<h4 id="一启动和退出">一、启动和退出</h4>
 
 <ol>
   <li>启动</li>
@@ -71,253 +71,7 @@
 <ul>
   <li>1G 跳转至行首</li>
   <li>G 跳转至行尾</li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vim" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>cmd</th>
-      <th>source</th>
-      <th>description</th>
-      <th>example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>mkdir</td>
-      <td>make</td>
-      <td>创建一个目录</td>
-      <td>mkdir dir</td>
-    </tr>
-    <tr>
-      <td>rmdir</td>
-      <td>remove</td>
-      <td>删除一个目录</td>
-      <td>rmdir dir</td>
-    </tr>
-    <tr>
-      <td>mv</td>
-      <td>move</td>
-      <td>移动或重命名一个目录或文件</td>
-      <td>mv dir1 dir2</td>
-    </tr>
-    <tr>
-      <td>cd</td>
-      <td>–</td>
-      <td>改变当前目录</td>
-      <td>cd dir</td>
-    </tr>
-    <tr>
-      <td>ls</td>
-      <td>–</td>
-      <td>显示当前目录的内容</td>
-      <td>ls</td>
-    </tr>
-    <tr>
-      <td>cmp</td>
-      <td>compare</td>
-      <td>比较两个文件是否有差异</td>
-      <td>cmp 01.js 02.js</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="文件操作">文件操作</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>cmd</th>
-      <th>source</th>
-      <th>description</th>
-      <th>example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>cat</td>
-      <td>–</td>
-      <td>显示或连接文件</td>
-      <td>cat 01.js</td>
-    </tr>
-    <tr>
-      <td>more</td>
-      <td>–</td>
-      <td>查看比价大的文件，可翻页，Q退出后，且查看的内容保留在终端</td>
-      <td>more 01.js</td>
-    </tr>
-    <tr>
-      <td>less</td>
-      <td>–</td>
-      <td>查看比较大的文件，可翻页，Q退出后，查看的内容不会保留在终端</td>
-      <td>less 01.js</td>
-    </tr>
-    <tr>
-      <td>od</td>
-      <td>–</td>
-      <td>读取指定文件，并将内容以八进制字码呈现</td>
-      <td>od 01.js</td>
-    </tr>
-    <tr>
-      <td>cp</td>
-      <td>copy</td>
-      <td>复制文件内容 ｜ cp 01.js 02.js</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>rm</td>
-      <td>remove</td>
-      <td>删除文件或目录,欲删除目录，需加上-rf参数</td>
-      <td>rm -rf dir</td>
-    </tr>
-    <tr>
-      <td>mv</td>
-      <td>–</td>
-      <td>移动或重命名一个目录或文件（第二个参数文件或目录存在就是移动， 不存在就是重命名）</td>
-      <td>mv 01.js 02</td>
-    </tr>
-    <tr>
-      <td>ln</td>
-      <td>link</td>
-      <td>链接文件或目录</td>
-      <td>ln 01.js 04.js</td>
-    </tr>
-    <tr>
-      <td>find</td>
-      <td>–</td>
-      <td>查找文件或目录</td>
-      <td>find . -name ‘*.js’ <a href="#find">详解</a></td>
-    </tr>
-    <tr>
-      <td>open</td>
-      <td>–</td>
-      <td>使用默认程序打开文件</td>
-      <td>open 01.js</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><a name="find"></a></p>
-
-<h3 id="find-命令详解">find 命令详解</h3>
-
-<h4 id="一find-命令语法格式">一、find 命令语法格式</h4>
-
-<p>find[路径][选项][操作]<br />
-选项参数对照表</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>选项</th>
-      <th>含义</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>-name</td>
-      <td>根据文件名查找</td>
-    </tr>
-    <tr>
-      <td>-perm</td>
-      <td>根据文件权限查找</td>
-    </tr>
-    <tr>
-      <td>-prune</td>
-      <td>该选项可以排出某些查找目录</td>
-    </tr>
-    <tr>
-      <td>-user</td>
-      <td>根据文件属主查找</td>
-    </tr>
-    <tr>
-      <td>-group</td>
-      <td>根据文件属组查找</td>
-    </tr>
-    <tr>
-      <td>-minute -n｜+n</td>
-      <td>根据文件更改时间查找</td>
-    </tr>
-    <tr>
-      <td>-type</td>
-      <td>按文件类型查找</td>
-    </tr>
-    <tr>
-      <td>-size -n｜+n</td>
-      <td>按文件大小查找</td>
-    </tr>
-    <tr>
-      <td>-mindepth n</td>
-      <td>从n级子目录开始搜索</td>
-    </tr>
-    <tr>
-      <td>-maxdepth n</td>
-      <td>最多搜索到n级子目录</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="二常用选型详解">二、常用选型详解</h4>
-
-<p>-name 查找/etc目录下以conf结尾的文件，文件名区分大小写 find /etc -name ‘*.conf’<br />
--iname 同-name,忽略大小写<br />
--user 查找文件所属用户为 zhangsan 的文件 find . -user zhangsan<br />
--group   查找文件所属组为 dev 的所有文件，例如：find . -group dev<br />
--type　　根据类型查找：如下</p>
-
-<p>　　　　　　f　　 文件　　　　　　　　find . -type f</p>
-
-<p>　　　　　　d　　目录　　　　　　　　find . -type d</p>
-
-<p>　　　　　　c　　字符设备文件　　　　find . -type c</p>
-
-<p>　　　　　　b　　块设备文件　　　　　find . -type b</p>
-
-<p>　　　　　　l　　 链接文件　　　　　　find . -type l</p>
-
-<p>　　　　　　p　　管道文件　　　　　　find . -type p</p>
-
-<p>-size　   根据文件大小查询</p>
-
-<p>　　　　  -n　　小于 大小为 n 的文件</p>
-
-<p>　　　　  +n　　大于 大小为 n 的文件</p>
-
-<p>　　　　　举例1：查找 /ect 目录下，小于 10000 字节的文件。 find /etc -size +10000c</p>
-
-<p>　　　　　举例2：查找 /etc 目录下，大于 1M 的文件。find /etc -size -1M</p>
-
-<p>-mtime　　</p>
-
-<p>　　　　　-n　　n 天以内修改的文件。</p>
-
-<p>　　　　　+n　　n 天以外修改的文件。</p>
-
-<p>　　　　　n　　  正好 n天 修改的文件</p>
-
-<p>　　　　　举例1: 查询 /etc 目录下，5天以内修改 且以 conf 结尾的文件。　find /etc -mtime -5 -name ‘*.conf’</p>
-
-<p>　　　　　举例2: 查询 /etc 目录下，10天之前修改，且属于 yangyang 的文件。　　find /etc -mtime +10 -user yangyang</p>
-
-<p>-mmin　　</p>
-
-<p>　　　　　-n　　n 分钟以内修改过的文件</p>
-
-<p>　　　　　+n　　n 分钟之前修改过的文件</p>
-
-<p>　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的文件。 　　find /etc -mmin +30</p>
-
-<p>　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的目录。 　　find /etc -mmin -30 -type d</p>
-
-<p>-mindepth n　　从第 n 级目录开始搜索</p>
-
-<p>　　　　　举例：从 /etc 的第三级子目录开始搜索。  find /etc -mindepth 3</p>
-
-<p>-maxdepth n　　表示至多搜索到第 n-1 级子目录。</p>
-
-<p>　　　　　举例1: 在 /etc 中搜索符合条件的文件，但最多搜索到 2级 子目录。　　find /etc -maxdepth 3 -name ‘*.conf’</p>
-
-<p>　　　　　举例2: find /etc -type f -name ‘*.conf’ -size +10k -maxdepthc 2</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="terminal" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">项目代码风格统一</title><link href="http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" rel="alternate" type="text/html" title="项目代码风格统一" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"><![CDATA[<h3 id="一集成editorconfig配置">一、集成editorconfig配置</h3>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vim" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">项目代码风格统一</title><link href="http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" rel="alternate" type="text/html" title="项目代码风格统一" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/2022/11/17/%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"><![CDATA[<h3 id="一集成editorconfig配置">一、集成editorconfig配置</h3>
 <p><a href="http://editorconfig.org">Editorconfig</a> 可以帮助同一项目的多个开发人员维护一致的代码风格。</p>
 
 <p>vscode 需要安装插件EditorConfig for VS Code</p>
@@ -609,7 +363,253 @@ trim_trailing_whitespace = false
 <p>直接使用git commit 提交, 在husky hook  中添加</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="dl">"</span><span class="s2">commit-msg</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">commitlint -E HUSKY_GIT_PARAMS</span><span class="dl">"</span>
-</code></pre></div></div>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="工具" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-09-28T16:16:38+08:00</published><updated>2022-09-28T16:16:38+08:00</updated><id>http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+</code></pre></div></div>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="工具" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">终端命令</title><link href="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html" rel="alternate" type="text/html" title="终端命令" /><published>2022-11-17T00:00:00+08:00</published><updated>2022-11-17T00:00:00+08:00</updated><id>http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/2022/11/17/mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4.html"><![CDATA[<h3 id="目录操作">目录操作</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>cmd</th>
+      <th>source</th>
+      <th>description</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mkdir</td>
+      <td>make</td>
+      <td>创建一个目录</td>
+      <td>mkdir dir</td>
+    </tr>
+    <tr>
+      <td>rmdir</td>
+      <td>remove</td>
+      <td>删除一个目录</td>
+      <td>rmdir dir</td>
+    </tr>
+    <tr>
+      <td>mv</td>
+      <td>move</td>
+      <td>移动或重命名一个目录或文件</td>
+      <td>mv dir1 dir2</td>
+    </tr>
+    <tr>
+      <td>cd</td>
+      <td>–</td>
+      <td>改变当前目录</td>
+      <td>cd dir</td>
+    </tr>
+    <tr>
+      <td>ls</td>
+      <td>–</td>
+      <td>显示当前目录的内容</td>
+      <td>ls</td>
+    </tr>
+    <tr>
+      <td>cmp</td>
+      <td>compare</td>
+      <td>比较两个文件是否有差异</td>
+      <td>cmp 01.js 02.js</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="文件操作">文件操作</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>cmd</th>
+      <th>source</th>
+      <th>description</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cat</td>
+      <td>–</td>
+      <td>显示或连接文件</td>
+      <td>cat 01.js</td>
+    </tr>
+    <tr>
+      <td>more</td>
+      <td>–</td>
+      <td>查看比价大的文件，可翻页，Q退出后，且查看的内容保留在终端</td>
+      <td>more 01.js</td>
+    </tr>
+    <tr>
+      <td>less</td>
+      <td>–</td>
+      <td>查看比较大的文件，可翻页，Q退出后，查看的内容不会保留在终端</td>
+      <td>less 01.js</td>
+    </tr>
+    <tr>
+      <td>od</td>
+      <td>–</td>
+      <td>读取指定文件，并将内容以八进制字码呈现</td>
+      <td>od 01.js</td>
+    </tr>
+    <tr>
+      <td>cp</td>
+      <td>copy</td>
+      <td>复制文件内容 ｜ cp 01.js 02.js</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>rm</td>
+      <td>remove</td>
+      <td>删除文件或目录,欲删除目录，需加上-rf参数</td>
+      <td>rm -rf dir</td>
+    </tr>
+    <tr>
+      <td>mv</td>
+      <td>–</td>
+      <td>移动或重命名一个目录或文件（第二个参数文件或目录存在就是移动， 不存在就是重命名）</td>
+      <td>mv 01.js 02</td>
+    </tr>
+    <tr>
+      <td>ln</td>
+      <td>link</td>
+      <td>链接文件或目录</td>
+      <td>ln 01.js 04.js</td>
+    </tr>
+    <tr>
+      <td>find</td>
+      <td>–</td>
+      <td>查找文件或目录</td>
+      <td>find . -name ‘*.js’ <a href="#find">详解</a></td>
+    </tr>
+    <tr>
+      <td>open</td>
+      <td>–</td>
+      <td>使用默认程序打开文件</td>
+      <td>open 01.js</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="find"></a></p>
+
+<h3 id="find-命令详解">find 命令详解</h3>
+
+<h4 id="一find-命令语法格式">一、find 命令语法格式</h4>
+
+<p>find[路径][选项][操作]<br />
+选项参数对照表</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-name</td>
+      <td>根据文件名查找</td>
+    </tr>
+    <tr>
+      <td>-perm</td>
+      <td>根据文件权限查找</td>
+    </tr>
+    <tr>
+      <td>-prune</td>
+      <td>该选项可以排出某些查找目录</td>
+    </tr>
+    <tr>
+      <td>-user</td>
+      <td>根据文件属主查找</td>
+    </tr>
+    <tr>
+      <td>-group</td>
+      <td>根据文件属组查找</td>
+    </tr>
+    <tr>
+      <td>-minute -n｜+n</td>
+      <td>根据文件更改时间查找</td>
+    </tr>
+    <tr>
+      <td>-type</td>
+      <td>按文件类型查找</td>
+    </tr>
+    <tr>
+      <td>-size -n｜+n</td>
+      <td>按文件大小查找</td>
+    </tr>
+    <tr>
+      <td>-mindepth n</td>
+      <td>从n级子目录开始搜索</td>
+    </tr>
+    <tr>
+      <td>-maxdepth n</td>
+      <td>最多搜索到n级子目录</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="二常用选型详解">二、常用选型详解</h4>
+
+<p>-name 查找/etc目录下以conf结尾的文件，文件名区分大小写 find /etc -name ‘*.conf’<br />
+-iname 同-name,忽略大小写<br />
+-user 查找文件所属用户为 zhangsan 的文件 find . -user zhangsan<br />
+-group   查找文件所属组为 dev 的所有文件，例如：find . -group dev<br />
+-type　　根据类型查找：如下</p>
+
+<p>　　　　　　f　　 文件　　　　　　　　find . -type f</p>
+
+<p>　　　　　　d　　目录　　　　　　　　find . -type d</p>
+
+<p>　　　　　　c　　字符设备文件　　　　find . -type c</p>
+
+<p>　　　　　　b　　块设备文件　　　　　find . -type b</p>
+
+<p>　　　　　　l　　 链接文件　　　　　　find . -type l</p>
+
+<p>　　　　　　p　　管道文件　　　　　　find . -type p</p>
+
+<p>-size　   根据文件大小查询</p>
+
+<p>　　　　  -n　　小于 大小为 n 的文件</p>
+
+<p>　　　　  +n　　大于 大小为 n 的文件</p>
+
+<p>　　　　　举例1：查找 /ect 目录下，小于 10000 字节的文件。 find /etc -size +10000c</p>
+
+<p>　　　　　举例2：查找 /etc 目录下，大于 1M 的文件。find /etc -size -1M</p>
+
+<p>-mtime　　</p>
+
+<p>　　　　　-n　　n 天以内修改的文件。</p>
+
+<p>　　　　　+n　　n 天以外修改的文件。</p>
+
+<p>　　　　　n　　  正好 n天 修改的文件</p>
+
+<p>　　　　　举例1: 查询 /etc 目录下，5天以内修改 且以 conf 结尾的文件。　find /etc -mtime -5 -name ‘*.conf’</p>
+
+<p>　　　　　举例2: 查询 /etc 目录下，10天之前修改，且属于 yangyang 的文件。　　find /etc -mtime +10 -user yangyang</p>
+
+<p>-mmin　　</p>
+
+<p>　　　　　-n　　n 分钟以内修改过的文件</p>
+
+<p>　　　　　+n　　n 分钟之前修改过的文件</p>
+
+<p>　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的文件。 　　find /etc -mmin +30</p>
+
+<p>　　　　　举例1: 查询 /etc 目录下 30分钟 之前修改过的目录。 　　find /etc -mmin -30 -type d</p>
+
+<p>-mindepth n　　从第 n 级目录开始搜索</p>
+
+<p>　　　　　举例：从 /etc 的第三级子目录开始搜索。  find /etc -mindepth 3</p>
+
+<p>-maxdepth n　　表示至多搜索到第 n-1 级子目录。</p>
+
+<p>　　　　　举例1: 在 /etc 中搜索符合条件的文件，但最多搜索到 2级 子目录。　　find /etc -maxdepth 3 -name ‘*.conf’</p>
+
+<p>　　　　　举例2: find /etc -type f -name ‘*.conf’ -size +10k -maxdepthc 2</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="terminal" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-09-28T16:16:38+08:00</published><updated>2022-09-28T16:16:38+08:00</updated><id>http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/09/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -637,7 +637,7 @@ trim_trailing_whitespace = false
   <li>编辑完成后，按 Esc 退出编辑，输入 :wq! 保存并退出</li>
   <li>输入 source .bash_profile 使环境变量生效</li>
   <li>终端输入 echo $PATH 查看当前环境变量，检查添加的变量是否生效</li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">vscode 实用插件记录</title><link href="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html" rel="alternate" type="text/html" title="vscode 实用插件记录" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html"><![CDATA[<p>TODO</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">快速访问 GitHub</title><link href="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html" rel="alternate" type="text/html" title="快速访问 GitHub" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520</id><content type="html" xml:base="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html"><![CDATA[<p>TODO 解锁更多使用姿势</p>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">快速访问 GitHub</title><link href="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html" rel="alternate" type="text/html" title="快速访问 GitHub" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520</id><content type="html" xml:base="http://localhost:4000/2022/05/12/SwitchHostsAndGitHub520.html"><![CDATA[<p>TODO 解锁更多使用姿势</p>
 <ul>
   <li>下载 <a href="https://github.com/oldj/SwitchHosts/blob/master/README_cn.md">SwitchHosts</a></li>
   <li>配置添加 Hosts
@@ -645,7 +645,7 @@ https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520
 <img src="/assets/img/github-hosts.png" alt="配置host" /></li>
   <li>使用时打开即可
 <img src="/assets/img/github-open.png" alt="打开" /></li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="github" /><summary type="html"><![CDATA[SwitchHost 和 GitHub520 自动更新 github.com hosts]]></summary></entry><entry><title type="html">GIT RESET 操作</title><link href="http://localhost:4000/2019/10/17/gitReset-%E6%93%8D%E4%BD%9C.html" rel="alternate" type="text/html" title="GIT RESET 操作" /><published>2019-10-17T00:00:00+08:00</published><updated>2019-10-17T00:00:00+08:00</updated><id>http://localhost:4000/2019/10/17/gitReset%20%E6%93%8D%E4%BD%9C</id><content type="html" xml:base="http://localhost:4000/2019/10/17/gitReset-%E6%93%8D%E4%BD%9C.html"><![CDATA[<h1 id="git-撤销">git 撤销</h1>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="github" /><summary type="html"><![CDATA[SwitchHost 和 GitHub520 自动更新 github.com hosts]]></summary></entry><entry><title type="html">vscode 实用插件记录</title><link href="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html" rel="alternate" type="text/html" title="vscode 实用插件记录" /><published>2022-05-12T00:00:00+08:00</published><updated>2022-05-12T00:00:00+08:00</updated><id>http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6</id><content type="html" xml:base="http://localhost:4000/2022/05/12/vsCodeTool%E5%AE%9E%E7%94%A8%E6%8F%92%E4%BB%B6.html"><![CDATA[<p>TODO</p>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vscode" /><summary type="html"><![CDATA[.....]]></summary></entry><entry><title type="html">GIT RESET 操作</title><link href="http://localhost:4000/2019/10/17/gitReset-%E6%93%8D%E4%BD%9C.html" rel="alternate" type="text/html" title="GIT RESET 操作" /><published>2019-10-17T00:00:00+08:00</published><updated>2019-10-17T00:00:00+08:00</updated><id>http://localhost:4000/2019/10/17/gitReset%20%E6%93%8D%E4%BD%9C</id><content type="html" xml:base="http://localhost:4000/2019/10/17/gitReset-%E6%93%8D%E4%BD%9C.html"><![CDATA[<h1 id="git-撤销">git 撤销</h1>
 
 <ul>
   <li>git Add
@@ -682,32 +682,4 @@ git restore –staged <文件>..." 以取消暂存</文件></li>
       <li>任何与 .gitignore 或其它忽略文件相匹配的文件都不会被移除。如果这些文件也想要移除， git clean -d -n -x</li>
     </ul>
   </li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry><entry><title type="html">vue-cli 3代码压缩去掉 console.log 信息</title><link href="http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin.html" rel="alternate" type="text/html" title="vue-cli 3代码压缩去掉 console.log 信息" /><published>2018-09-28T00:00:00+08:00</published><updated>2018-09-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin</id><content type="html" xml:base="http://localhost:4000/2018/09/28/uglifyjs-webpack-plugin.html"><![CDATA[<p>默认的 vue-cli 3 配置项，打包的 JS 代码，并不会去掉 console 信息，经过查文档，终于搞定。
-增加 vue.config.js 的配置项， 使用 uglifyjs-webpack-plugin 压缩代码.此处调试的时候要记得清除浏览器缓存，否则可能已经配置正确了，因为浏览器的缓存机制导致看到的效果不正确。</p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">uglifyjs</span><span class="o">-</span><span class="nx">webpack</span><span class="o">-</span><span class="nx">plugin</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span>
-<span class="c1">// vue.config.js </span>
-<span class="nx">cosnt</span> <span class="nx">UglifyJsPlugin</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">uglify-webpack-plugin</span><span class="dl">'</span><span class="p">)</span>
-<span class="c1">// 增加 configureWebpack， 该对象会被 webpack-merge 合并入最终的 webpack 配置</span>
-<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">configureWebpack</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">optimization</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">minimizer</span><span class="p">:</span> <span class="p">[</span>
-        <span class="k">new</span> <span class="nx">UglifyJsPlugin</span><span class="p">({</span>
-          <span class="na">uglifyOptions</span><span class="p">:</span> <span class="p">{</span>
-            <span class="na">compress</span><span class="p">:</span> <span class="p">{</span>
-              <span class="na">warnings</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-              <span class="na">drop_console</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span><span class="c1">//console</span>
-              <span class="na">pure_funcs</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">console.log</span><span class="dl">'</span><span class="p">]</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-      <span class="p">})</span>
-    <span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-</code></pre></div></div>
-<ul>
-  <li>uglifyOptions 配置项看<a href="'https://github.com/mishoo/UglifyJS2#minify-options'">这里</a></li>
-  <li>compress 配置项看<a href="'https://github.com/mishoo/UglifyJS2#compress-options'">这里</a></li>
-</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="vue-cli" /><summary type="html"><![CDATA[You will find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>
+</ul>]]></content><author><name>wangzm</name></author><category term="Blog" /><category term="git" /><summary type="html"><![CDATA[You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.]]></summary></entry></feed>
